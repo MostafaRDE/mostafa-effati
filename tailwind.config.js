@@ -5,5 +5,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  theme: {
+    extend: {
+      boxShadow: {
+        'header': '4px 4px 100px 4px rgba(0, 0, 0, 0.25)',
+      }
+    }
+  },
   plugins: [],
 }

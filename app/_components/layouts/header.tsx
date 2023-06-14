@@ -1,8 +1,9 @@
-import { menuHeaderItems } from '@/modules/menu'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Params } from '@/modules/interfaces/props.interface'
+import { menuHeaderItems } from '@/modules/menu'
 
-export default function Header()
+export default function Header({ lang, t }: Params)
 {
     return (
         <header>
@@ -16,7 +17,7 @@ export default function Header()
                         {
                             Object.entries(menuHeaderItems).map(([ k, v ]) =>(
                                 <li>
-                                    <Link href={ v.href || '#' }>{ v.translateKey }</Link>
+                                    <Link href={ v.href || '#' }>{ t[ 'glossaries' ][ v.translateKey ] }</Link>
                                 </li>
                             ))
                         }

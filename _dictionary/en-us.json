@@ -1,1 +1,15 @@
-{}
+{
+  "glossaries": {
+    "about": "About",
+    "lets_talk": "Let's Talk",
+    "portfolio": "Portfolio",
+    "what_i_do": "What i Do"
+  },
+  "pages": {
+    "index": {
+      "head": {
+        "title": "Mostafa Effati | Lead & Full stack developer"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
-import '@/assets/globals.css'
+import '@/assets/css/globals.css'
+
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { getDictionary } from '@/get-dictionary'

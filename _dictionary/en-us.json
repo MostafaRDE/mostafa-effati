@@ -9,6 +9,12 @@
     "index": {
       "head": {
         "title": "Mostafa Effati | Lead & Full stack developer"
+      },
+      "header": {
+        "caption": {
+          "title": "I'm Full Stack Developer and develop your product in a scalable and efficient way",
+          "top": "Hello, I'm Mostafa Effati"
+        }
       }
     }
   }

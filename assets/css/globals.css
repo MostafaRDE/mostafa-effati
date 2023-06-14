@@ -17,9 +17,15 @@
 }
 
 body {
+    @apply text-base;
     color: rgb(var(--foreground-rgb));
-    background: linear-gradient(to left,
-        rgb(241, 184, 210, 0.74),
-        rgb(149, 187, 233, 0.79)
-    );
+    background: linear-gradient(to left, #f1b8d2bd, #95bbe9c9);
+}
+
+.text-background {
+    background: linear-gradient(252deg, #f1b8d2, #95bbe9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }

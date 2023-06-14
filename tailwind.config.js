@@ -7,9 +7,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'primary-background': "linear-gradient(to bottom, #f1b8d2, #95bbe9)",
+      },
       boxShadow: {
         'header': '4px 4px 100px 4px rgba(0, 0, 0, 0.25)',
+      },
+      lineHeight: {
+        '11': '2.75rem',
+        '12': '3rem',
+        '13': '3.25rem',
+        '14': '3.5rem',
+        '15': '3.75rem',
+        '16': '4rem',
       }
+    },
+    fontSize: {
+      sm: '0.75rem',
+      base: '0.875rem',
+      xl: '1rem',
+      '2xl': '1.25rem',
+      '3xl': '1.563rem',
+      '4xl': '1.953rem',
+      '5xl': '2.441rem',
+      '6xl': '3.052rem',
     }
   },
   plugins: [],

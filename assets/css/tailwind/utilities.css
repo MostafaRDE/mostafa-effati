@@ -7,14 +7,14 @@
         @variants hover, focus {
 
             .text-gradient-primary {
-                background: linear-gradient(252deg, #f1b8d2, #95bbe9);
+                @apply bg-gradient-primary-to-252;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
 
-            .text-gradient-primary-reverse {
-                background: linear-gradient(252deg, #ef85b4, #5f9de9);
+            .text-gradient-primary-bold {
+                @apply bg-gradient-primary-bold-to-252;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

@@ -7,8 +7,12 @@ export default async function Home({ params: { lang } }: Props)
     const t = await getDictionary(lang!)
 
     return (
-        <main className="container mx-auto">
+        <div className="container mx-auto">
             <Header lang={ lang } t={ t } />
-        </main>
+
+            <main className="max-w-7xl mx-auto my-20">
+
+            </main>
+        </div>
     )
 }

@@ -7,6 +7,7 @@ import { Params } from '@/modules/interfaces/props.interface'
 import HeaderTop from './header-top'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { socialMediaItems } from '@/modules/menu'
 
 export default function Header({ lang, t }: Params)
 {
@@ -25,19 +26,27 @@ export default function Header({ lang, t }: Params)
                     </div>
 
                     <div className="mt-12 flex gap-x-6">
-                        <Link href="#" className="opacity-50 hover:opacity-100 transition-opacity">
-                            <FontAwesomeIcon icon={ faLinkedinIn } color='#0075b5' width={ 24 } />
-                        </Link>
-                        <Link href="#" className="opacity-50 hover:opacity-100 transition-opacity">
-                            <FontAwesomeIcon icon={ faGithub } color='#000' width={ 24 } />
-                        </Link>
-                        <Link href="#" className="opacity-50 hover:opacity-100 transition-opacity">
-                            <FontAwesomeIcon icon={ faInstagram } color='#dd2a7b' width={ 24 } />
-                        </Link>
+                        {
+                            Object.entries(socialMediaItems).map(([ k, v ]) =>
+                            {
+                                return (
+                                    <Link
+                                        key={ `header-social-media-item-${ k }` }
+                                        href={ v.href || '#' }
+                                        target='_blank'
+                                        rel="nofollow"
+                                        className="opacity-50 hover:opacity-100 transition-opacity"
+                                    >
+                                        <FontAwesomeIcon icon={ v.icon! } color={ v.iconColor } width={ 24 } />
+                                    </Link>
+                                )
+                            })
+                        }
                     </div>
 
-                    <div className="mt-24 flex gap-x-6">
-                        
+                    <div className="mt-24 flex gap-x-9">
+                        <button className="btn">Portfolio</button>
+                        <button className="btn btn-primary">Let's Talk!</button>
                     </div>
                 </div>
 

@@ -1,0 +1,14 @@
+.btn {
+    @apply bg-white font-bold text-xl transition-opacity opacity-70;
+    padding: 13px 50px;
+    box-shadow: 4px 4px 40px 4px #6b6b6b40;
+    border-radius: 10px;
+    color: #ec8cb8;
+}
+.btn:hover {
+    @apply opacity-100;
+}
+
+.btn-primary {
+    @apply bg-gradient-primary-bold-to-252 text-white;
+}

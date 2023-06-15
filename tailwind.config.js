@@ -8,14 +8,16 @@ module.exports = {
   ],
   safelist: [
     'text-gradient-primary',
-    'text-gradient-primary-reverse',
+    'text-gradient-primary-bold',
     'hover:text-gradient-primary',
-    'hover:text-gradient-primary-reverse',
+    'hover:text-gradient-primary-bold',
   ],
   theme: {
     extend: {
       backgroundImage: {
         'gradient-primary-to-b': "linear-gradient(to bottom, #f1b8d2, #95bbe9)",
+        'gradient-primary-to-252': "linear-gradient(252deg, #f1b8d2, #95bbe9)",
+        'gradient-primary-bold-to-252': "linear-gradient(252deg, #ef85b4, #5f9de9)",
       },
       boxShadow: {
         'header': '4px 4px 100px 4px rgba(0, 0, 0, 0.25)',

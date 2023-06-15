@@ -22,7 +22,7 @@ export default function headerTop({ lang, t }: Params)
                             {
                                 const classNamesSpan = clsx({
                                     'hover:opacity-60 transition-opacity': !v.classNames,
-                                    [ v.classNames || 'hover:text-gradient-primary' ]: v.classNames,
+                                    [ v.classNames || '' ]: v.classNames,
                                     [ v.classNamesHover || '' ]: v.classNamesHover,
                                 })
 

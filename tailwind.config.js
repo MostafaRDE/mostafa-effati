@@ -6,6 +6,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'text-gradient-primary',
+    'text-gradient-primary-reverse',
+    'hover:text-gradient-primary',
+    'hover:text-gradient-primary-reverse',
+  ],
   theme: {
     extend: {
       backgroundImage: {

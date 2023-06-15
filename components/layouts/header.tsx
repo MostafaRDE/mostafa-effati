@@ -25,14 +25,14 @@ export default function Header({ lang, t }: Params)
                     </div>
 
                     <div className="mt-12 flex gap-x-6">
-                        <Link href="#">
-                            <FontAwesomeIcon icon={ faLinkedinIn } color='#000' width={24} />
+                        <Link href="#" className="opacity-50 hover:opacity-100 transition-opacity">
+                            <FontAwesomeIcon icon={ faLinkedinIn } color='#0075b5' width={ 24 } />
                         </Link>
-                        <Link href="#">
-                            <FontAwesomeIcon icon={ faGithub } color='#000' width={24} />
+                        <Link href="#" className="opacity-50 hover:opacity-100 transition-opacity">
+                            <FontAwesomeIcon icon={ faGithub } color='#000' width={ 24 } />
                         </Link>
-                        <Link href="#">
-                            <FontAwesomeIcon icon={ faInstagram } color='#000' width={24} />
+                        <Link href="#" className="opacity-50 hover:opacity-100 transition-opacity">
+                            <FontAwesomeIcon icon={ faInstagram } color='#dd2a7b' width={ 24 } />
                         </Link>
                     </div>
 
@@ -43,7 +43,12 @@ export default function Header({ lang, t }: Params)
 
                 <div className="flex justify-center">
                     <div className="rounded-full w-72 h-72 overflow-hidden bg-gradient-primary-to-b">
-                        <Image src={ require('@/assets/images/avatars/my-self.png') } alt="Mostafa Effati's profile image" priority />
+                        <Image
+                            src={ require('@/assets/images/avatars/my-self.png') }
+                            alt="Mostafa Effati's profile image"
+                            priority
+                            className="-rotate-6"
+                            />
                     </div>
                 </div>
 

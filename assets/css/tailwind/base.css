@@ -1,0 +1,9 @@
+@tailwind base;
+
+@layer base {
+    body {
+        @apply text-base;
+        color: rgb(var(--foreground-rgb));
+        background: linear-gradient(to left, #f1b8d2bd, #95bbe9c9);
+    }
+}

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'primary-background': "linear-gradient(to bottom, #f1b8d2, #95bbe9)",
+        'gradient-primary-to-b': "linear-gradient(to bottom, #f1b8d2, #95bbe9)",
       },
       boxShadow: {
         'header': '4px 4px 100px 4px rgba(0, 0, 0, 0.25)',
@@ -20,7 +21,7 @@ module.exports = {
         '14': '3.5rem',
         '15': '3.75rem',
         '16': '4rem',
-      }
+      },
     },
     fontSize: {
       sm: '0.75rem',

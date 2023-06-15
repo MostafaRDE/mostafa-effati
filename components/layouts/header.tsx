@@ -42,7 +42,7 @@ export default function Header({ lang, t }: Params)
                 </div>
 
                 <div className="flex justify-center">
-                    <div className="rounded-full w-72 h-72 overflow-hidden bg-primary-background">
+                    <div className="rounded-full w-72 h-72 overflow-hidden bg-gradient-primary-to-b">
                         <Image src={ require('@/assets/images/avatars/my-self.png') } alt="Mostafa Effati's profile image" priority />
                     </div>
                 </div>

@@ -1,13 +1,14 @@
 import '@/assets/css/layouts/header.css'
 
+import { Params } from '@/modules/interfaces/props.interface'
+import { socialMediaItems } from '@/modules/menu'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import { Params } from '@/modules/interfaces/props.interface'
-
-import HeaderTop from './header-top'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { socialMediaItems } from '@/modules/menu'
+
+import Button, { ButtonTypes } from '@/components/components/button'
+import HeaderTop from './header-top'
 
 export default function Header({ lang, t }: Params)
 {
@@ -45,8 +46,8 @@ export default function Header({ lang, t }: Params)
                     </div>
 
                     <div className="mt-24 flex gap-x-9">
-                        <button className="btn">Portfolio</button>
-                        <button className="btn btn-primary">Let's Talk!</button>
+                        <Button>Portfolio</Button>
+                        <Button type={ ButtonTypes.Primary }>Let's Talk!</Button>
                     </div>
                 </div>
 

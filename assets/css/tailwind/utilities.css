@@ -2,26 +2,18 @@
 
 @layer utilities {
 
-    @responsive {
+    .text-gradient-primary {
+        @apply bg-gradient-primary-to-252;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-        @variants hover, focus {
-
-            .text-gradient-primary {
-                @apply bg-gradient-primary-to-252;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            .text-gradient-primary-bold {
-                @apply bg-gradient-primary-bold-to-252;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-        }
-
+    .text-gradient-primary-bold {
+        @apply bg-gradient-primary-bold-to-252;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
 }

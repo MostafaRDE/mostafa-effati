@@ -3,12 +3,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Params } from '@/modules/interfaces/props.interface'
 import { menuHeaderItems } from '@/modules/menu'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faHamburger } from '@fortawesome/free-solid-svg-icons'
 
 export default function headerTop({ lang, t }: Params)
 {
     return (
         <div className="flex justify-between items-center">
             <div className="relative flex justify-center w-full sm:block sm:w-auto">
+                <div className="absolute bottom-0 left-0 top-0 flex items-center sm:hidden">
+                    <span className="cursor-pointer">
+                        <FontAwesomeIcon icon={ faBars } color='#000' width={ 24 } className="text-gradient-primary-bold fill" />
+                    </span>
+                </div>
                 <Link href="/">
                     <Image src={ require('@/assets/images/logo-outline.svg') } alt="Mostafa Effati's Logo" width={ 44 } />
                 </Link>

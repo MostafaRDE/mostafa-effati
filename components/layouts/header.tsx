@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Button, { ButtonTypes } from '@/components/components/button'
+import Button, { ButtonTypes, LinkTypes } from '@/components/components/button'
 import HeaderTop from './header-top'
 
 export default function header({ lang, t }: Params)
@@ -44,8 +44,8 @@ export default function header({ lang, t }: Params)
                     </div>
 
                     <div className="mt-24 flex gap-9 flex-wrap">
-                        <Button>Portfolio</Button>
-                        <Button type={ ButtonTypes.Primary }>Let's Talk!</Button>
+                        <Button hasLinkType={ LinkTypes.HTML } href="#portfolio">{ t[ 'glossaries' ][ 'portfolio' ] }</Button>
+                        <Button type={ ButtonTypes.Primary } hasLinkType={ LinkTypes.HTML } href="#lets-talk">{ t[ 'glossaries' ][ 'lets_talk' ] }!</Button>
                     </div>
                 </div>
 

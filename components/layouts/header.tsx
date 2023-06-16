@@ -1,5 +1,3 @@
-import '@/assets/css/layouts/header.css'
-
 import { Params } from '@/modules/interfaces/props.interface'
 import { socialMediaItems } from '@/modules/menu'
 
@@ -10,23 +8,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button, { ButtonTypes } from '@/components/components/button'
 import HeaderTop from './header-top'
 
-export default function Header({ lang, t }: Params)
+export default function header({ lang, t }: Params)
 {
     return (
-        <header className="sm:mt-16 sm:px-14 sm:py-11 sm:rounded-3xl bg-white shadow-header relative">
+        <header className="sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header bg-[url('../../images/shapes/cross-lines-1.svg')] sm:bg-no-repeat sm:bg-right-bottom">
 
             <HeaderTop lang={ lang } t={ t } />
 
-            <div className="grid grid-cols-3 gap-x-20 px-20 mb-16 mt-28">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-28">
 
-                <div className="col-span-2">
+                <div className="xl:col-span-2 order-2 xl:order-1 mt-24 xl:mt-0">
 
                     <div>
-                        <span className="text-2xl font-medium">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'top' ] }</span>
-                        <h1 className="text-5xl font-bold leading-15 mt-5">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'title' ] }</h1>
+                        <span className="text-xl sm:text-2xl font-medium">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'top' ] }</span>
+                        <h1 className="text-4xl sm:text-5xl font-bold leading-15 mt-5">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'title' ] }</h1>
                     </div>
 
-                    <div className="mt-12 flex gap-x-6">
+                    <div className="mt-12 flex flex-wrap gap-6">
                         {
                             Object.entries(socialMediaItems).map(([ k, v ]) =>
                             {
@@ -45,14 +43,14 @@ export default function Header({ lang, t }: Params)
                         }
                     </div>
 
-                    <div className="mt-24 flex gap-x-9">
+                    <div className="mt-24 flex gap-9 flex-wrap">
                         <Button>Portfolio</Button>
                         <Button type={ ButtonTypes.Primary }>Let's Talk!</Button>
                     </div>
                 </div>
 
-                <div className="flex justify-center">
-                    <div className="rounded-full w-72 h-72 overflow-hidden bg-gradient-primary-to-b">
+                <div className="flex justify-center items-start order-1 xl:order-2">
+                    <div className="rounded-full w-72 aspect-square overflow-hidden bg-gradient-primary-to-b">
                         <Image
                             src={ require('@/assets/images/avatars/my-self.png') }
                             alt="Mostafa Effati's profile image"

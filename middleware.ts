@@ -22,7 +22,7 @@ function getLocale(request: NextRequest): string | undefined
 export function middleware(request: NextRequest)
 {
     if (!request.nextUrl.pathname.endsWith('/'))
-        return    
+        return
     
     const pathname = request.nextUrl.pathname
 

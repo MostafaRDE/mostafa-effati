@@ -11,7 +11,7 @@ import HeaderTop from './header-top'
 export default function header({ lang, t }: Params)
 {
     return (
-        <header className="sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header bg-[url('../../images/shapes/cross-lines-1.svg')] sm:bg-no-repeat sm:bg-right-bottom">
+        <header className="relative sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header bg-[url('../../images/shapes/cross-lines-1.svg')] sm:bg-no-repeat sm:bg-right-bottom">
 
             <HeaderTop lang={ lang } t={ t } />
 
@@ -60,6 +60,13 @@ export default function header({ lang, t }: Params)
                     </div>
                 </div>
 
+            </div>
+
+            <div className="absolute bottom-8 right-12">
+                <span className="font-bold">
+                    Designed by&nbsp;
+                    <span className="underline text-black hover:text-gray-400"><Link href="#" target="_blank" rel="nofollow" className="text-gradient-primary-bold hover:text-gradient-primary">Shirley Bacilio</Link></span>
+                </span>
             </div>
 
         </header>

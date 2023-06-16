@@ -1,7 +1,6 @@
 import { Params } from '@/modules/interfaces/props.interface'
 import { menuHeaderItems } from '@/modules/menu'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function sidebar({ lang, t }: Params)
 {
@@ -20,7 +19,7 @@ export default function sidebar({ lang, t }: Params)
                             {
                                 return (
                                     <li key={ `sidebar-menu-item-${ k }` } className="font-black text-4xl text-center first:mt-0 mt-10 text-gradient-primary-bold hover:text-gradient-primary">
-                                        <Link href={ v.href || '#' }>{ t[ 'glossaries' ][ v.translateKey ] }</Link>
+                                        <a href={ v.href || '#' }>{ t[ 'glossaries' ][ v.translateKey ] }</a>
                                     </li>
                                 )
                             })

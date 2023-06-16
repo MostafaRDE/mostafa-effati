@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Params } from '@/modules/interfaces/props.interface'
 import { menuHeaderItems } from '@/modules/menu'
+import { generateRouteLinkHref } from '@/modules/helpers'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -11,12 +12,15 @@ export default function headerTop({ lang, t }: Params)
     return (
         <div className="flex justify-between items-center">
             <div className="relative flex justify-center w-full sm:block sm:w-auto">
+
+                {/* For sidebar mode */}
                 {/* <div className="absolute bottom-0 left-0 top-0 flex items-center sm:hidden">
                     <span className="cursor-pointer">
                         <FontAwesomeIcon icon={ faBars } color='#000' width={ 24 } className="text-gradient-primary-bold fill" />
                     </span>
                 </div> */}
-                <Link href="/">
+
+                <Link href={ generateRouteLinkHref(lang!, '') }>
                     <Image src={ require('@/assets/images/logo-outline.svg') } alt="Mostafa Effati's Logo" width={ 44 } />
                 </Link>
             </div>
@@ -35,7 +39,7 @@ export default function headerTop({ lang, t }: Params)
 
                                 return (
                                     <li key={ `header-top-menu-item-${ k }` } className="filter-none hidden sm:block sm:w-24 lg:w-28 xl:w-32 text-center">
-                                        <span className={ classNamesSpan }><Link href={ v.href || '#' } className="font-bold ">{ t[ 'glossaries' ][ v.translateKey ] }</Link></span>
+                                        <span className={ classNamesSpan }><a href={ v.href || '#' } className="font-bold ">{ t[ 'glossaries' ][ v.translateKey ] }</a></span>
                                     </li>
                                 )
                             })

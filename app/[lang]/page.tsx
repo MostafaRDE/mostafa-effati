@@ -8,7 +8,7 @@ export default async function Home({ params: { lang } }: Props)
     const t = await getDictionary(lang!)
 
     return (
-        <div className="container mx-auto" id="#home">
+        <div className="container mx-auto" id="home">
 
             <Header lang={ lang } t={ t } />
 

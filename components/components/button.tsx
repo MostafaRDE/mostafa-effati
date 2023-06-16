@@ -1,11 +1,17 @@
 import clsx from 'clsx'
+import { MouseEventHandler } from 'react'
 
 export enum ButtonTypes
 {
     Primary = 'primary',
 }
 
-export default function button({ children, className, type }: { children: React.ReactNode, className?: string, type?: ButtonTypes })
+export default function button({ children, className, type, onClick }: {
+    children: React.ReactNode,
+    className?: string,
+    onClick?: MouseEventHandler<HTMLButtonElement>,
+    type?: ButtonTypes,
+})
 {
     const classes = clsx({
         'btn': true,
@@ -14,6 +20,6 @@ export default function button({ children, className, type }: { children: React.
     })
 
     return (
-        <button className={ classes }>{ children }</button>
+        <button className={ classes } onClick={ onClick }>{ children }</button>
     )
 }

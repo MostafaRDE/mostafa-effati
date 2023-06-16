@@ -64,8 +64,10 @@ export default function header({ lang, t }: Params)
 
             <div className="absolute bottom-8 right-8 sm:right-10 xl:right-12">
                 <span className="font-bold">
-                    Designed by&nbsp;
-                    <span className="underline text-black hover:text-gray-400"><Link href="#" target="_blank" rel="nofollow" className="text-gradient-primary-bold hover:text-gradient-primary">Shirley Bacilio</Link></span>
+                    UX/UI Designed by&nbsp;
+                    <Link href={ process.env.SOCIAL_LINKS_SHIRLEY_BACILIO_LINKEDIN || '' } target="_blank" rel="nofollow" className="underline text-black hover:text-gray-400">
+                        <span className="text-gradient-primary-bold hover:text-gradient-primary">Shirley Bacilio</span>
+                    </Link>
                 </span>
             </div>
 

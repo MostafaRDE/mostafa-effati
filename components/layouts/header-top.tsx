@@ -8,7 +8,7 @@ export default function headerTop({ lang, t }: Params)
 {
     return (
         <div className="flex justify-between items-center">
-            <div>
+            <div className="relative flex justify-center w-full sm:block sm:w-auto">
                 <Link href="/">
                     <Image src={ require('@/assets/images/logo-outline.svg') } alt="Mostafa Effati's Logo" width={ 44 } />
                 </Link>

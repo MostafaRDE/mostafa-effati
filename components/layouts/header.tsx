@@ -11,17 +11,17 @@ import HeaderTop from './header-top'
 export default function header({ lang, t }: Params)
 {
     return (
-        <header className="relative sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header bg-[url('../../images/shapes/cross-lines-1.svg')] sm:bg-no-repeat sm:bg-right-bottom">
+        <header className="relative sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header sm:bg-[url('../../images/shapes/cross-lines-1.svg')] sm:bg-no-repeat sm:bg-right-bottom">
 
             <HeaderTop lang={ lang } t={ t } />
 
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-28">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-24 sm:mt-28">
 
                 <div className="xl:col-span-2 order-2 xl:order-1 mt-24 xl:mt-0">
 
                     <div>
                         <span className="text-xl sm:text-2xl font-medium">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'top' ] }</span>
-                        <h1 className="text-4xl sm:text-5xl font-bold leading-15 mt-5">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'title' ] }</h1>
+                        <h1 className="text-4xl sm:text-5xl font-bold leading-12 sm:leading-15 mt-5">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'title' ] }</h1>
                     </div>
 
                     <div className="mt-12 flex flex-wrap gap-6">

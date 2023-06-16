@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Params } from '@/modules/interfaces/props.interface'
 import { menuHeaderItems } from '@/modules/menu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faHamburger } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function headerTop({ lang, t }: Params)
 {

@@ -8,6 +8,7 @@ export default async function Home({ params: { lang } }: Props)
 
     return (
         <div className="container mx-auto">
+
             <Header lang={ lang } t={ t } />
 
             <main className="max-w-7xl mx-auto my-20">

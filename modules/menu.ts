@@ -1,6 +1,6 @@
 import { IconDefinition, faGithub, faInstagram, faLinkedinIn, faTelegram } from '@fortawesome/free-brands-svg-icons'
-import { faInfo } from '@fortawesome/free-solid-svg-icons'
-import { faFaceLaughBeam, faSquareCheck, faThumbsUp } from '@fortawesome/free-regular-svg-icons'
+import { faInfo, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFaceLaughBeam, faSquareCheck, faThumbsUp } from '@fortawesome/free-regular-svg-icons'
 
 export type Menu = Record<string, MenuItemInterface>
 
@@ -10,6 +10,7 @@ export interface MenuItemInterface
     iconColor?: string
     iconWidth?: number
     translateKey: string
+    title?: string,
     href?: string
     classNames?: string
     classNamesHover?: string
@@ -59,10 +60,41 @@ export const socialMediaItems: Menu = {
         translateKey: 'instagram',
         href: 'https://www.instagram.com/mostafaeffatii/',
     },
-    faTelegram: {
+    telegram: {
         icon: faTelegram,
         iconColor: '#0088cc',
         translateKey: 'telegram',
         href: 'https://t.me/mostafaeffati',
+    },
+}
+
+export const footerLinks: Menu = {
+    email: {
+        icon: faPaperPlane,
+        iconColor: '#d9b9d8',
+        translateKey: '',
+        title: 'contact@mostafaeffati.ir',
+        href: 'mailto:contact@mostafaeffati.ir',
+    },
+    telegram: {
+        icon: faTelegram,
+        iconColor: '#0088cc',
+        translateKey: '',
+        title: '@mostafa_effati',
+        href: 'https://t.me/mostafa_effati',
+    },
+    tel: {
+        icon: faPhone,
+        iconColor: '#a5bae5',
+        translateKey: '',
+        title: '+98 938 335 9523',
+        href: 'tel:+989383359523',
+    },
+    instagram: {
+        icon: faInstagram,
+        iconColor: '#dd2a7b',
+        translateKey: '',
+        title: '@mostafaeffatii',
+        href: 'https://www.instagram.com/mostafaeffatii/',
     },
 }

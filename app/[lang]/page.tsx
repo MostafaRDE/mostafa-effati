@@ -13,7 +13,7 @@ export default async function Home({ params: { lang } }: Props)
 
             <Header lang={ lang } t={ t } />
 
-            <main className="my-20 px-16">
+            <main className="my-20 px-16 xl:px-24 text-white text-center lg:text-left">
 
                 <WhatIDo lang={ lang } t={ t } />
 

@@ -16,6 +16,20 @@
           "title": "Full Stack Developer and develop your product in a scalable and efficient way",
           "top": "Hello, I'm Mostafa Effati"
         }
+      },
+      "what_i_do": {
+        "part1": {
+          "text": "Do you want to develop and deploy your software with quality and in the basic methods of the day?",
+          "bold_text": "I can do it."
+        },
+        "part2": {
+          "text": "Do you want to produce or modify your software in an engineered and professional way?",
+          "bold_text": "I can help you."
+        },
+        "part3": {
+          "text": "Do you want to leave your entire project, such as Backend, Frontend, DevOps, cloud services, etc., to someone like me to do it for you?",
+          "bold_text": "I'm not an unicorn!"
+        }
       }
     }
   }

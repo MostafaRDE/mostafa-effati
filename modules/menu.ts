@@ -1,6 +1,6 @@
 import { IconDefinition, faGithub, faInstagram, faLinkedinIn, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faInfo } from '@fortawesome/free-solid-svg-icons'
-import { faFaceGrinWide, faHeart, faThumbsUp } from '@fortawesome/free-regular-svg-icons'
+import { faFaceLaughBeam, faSquareCheck, faThumbsUp } from '@fortawesome/free-regular-svg-icons'
 
 export type Menu = Record<string, MenuItemInterface>
 
@@ -27,12 +27,12 @@ export const menuHeaderItems: Menu = {
         href: '#what-i-do',
     },
     portfolio: {
-        icon: faHeart,
+        icon: faSquareCheck,
         translateKey: 'portfolio',
         href: '#portfolio',
     },
     letsTalk: {
-        icon: faFaceGrinWide,
+        icon: faFaceLaughBeam,
         translateKey: 'lets_talk',
         href: '#lets-talk',
         classNames: 'text-gradient-primary-bold',

@@ -13,7 +13,7 @@
     }
 
     h2 {
-        @apply mb-14 font-bold text-4xl text-white;
+        @apply mb-14 font-bold text-4xl;
     }
     
 }

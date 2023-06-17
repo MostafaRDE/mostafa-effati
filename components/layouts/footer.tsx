@@ -44,6 +44,10 @@ export default function footer({ lang, t }: Params)
                         </Button>
                     </div>
 
+                    <div className="mt-8">
+                        
+                    </div>
+
                 </div>
             </section>
             <div className="flex flex-col sm:flex-row text-black sm:text-white text-center sm:mt-1 pt-1 border-t-[1px] border-dashed border-gray-400 sm:border-none">

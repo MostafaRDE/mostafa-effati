@@ -1,6 +1,8 @@
 import { Params } from '@/modules/interfaces/props.interface'
 import { footerLinks } from '@/modules/menu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Button, { ButtonTypes, LinkTypes } from '@/components/components/button'
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function footer({ lang, t }: Params)
 {
@@ -11,6 +13,7 @@ export default function footer({ lang, t }: Params)
                 <h3 className="text-gradient-primary inline-block font-bold text-4xl sm:text-5xl">{ t[ 'glossaries' ][ 'lets_talk' ] }</h3>
                 
                 <div className="mt-14">
+
                     <ul className="grid grid-cols-2 gap-5 max-w-lg">
                         {
                             Object.entries(footerLinks).map(([ k, v ]) =>
@@ -26,10 +29,23 @@ export default function footer({ lang, t }: Params)
                             })
                         }
                     </ul>
+
+                    <div className="mt-16">
+                        <Button
+                            type={ ButtonTypes.Primary }
+                            hasLinkType={ LinkTypes.HTML }
+                            href="#"
+                            target="_blank"
+                            className="rounded-md inline-block">
+                            <span className="flex gap-4">
+                                <FontAwesomeIcon icon={ faFileArrowDown } color="#fff" width={ 24 } height={ 24 } className="-ml-2" />
+                                { t[ 'glossaries' ][ 'download_my_resume' ] }
+                            </span>
+                        </Button>
+                    </div>
+
                 </div>
-
             </section>
-
             <div className="flex flex-col sm:flex-row text-black sm:text-white text-center sm:mt-1 pt-1 border-t-[1px] border-dashed border-gray-400 sm:border-none">
                 <div className="grow">
                     Developed by

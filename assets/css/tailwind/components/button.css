@@ -1,5 +1,5 @@
 .btn {
-    @apply relative px-[50px] py-[13px] bg-gradient-primary-bold-to-252 font-bold text-xl transition-opacity opacity-70 rounded-[10px] text-[#ec8cb8];
+    @apply relative px-[50px] py-[13px] bg-gradient-primary-bold-to-252 font-bold text-xl transition-opacity opacity-50 rounded-[10px] text-[#ec8cb8];
 }
 .btn::before {
     @apply absolute bottom-[1px] left-[1px] right-[1px] top-[1px] bg-white rounded-[10px];

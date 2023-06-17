@@ -18,8 +18,16 @@
             "bold_text": "I can help you."
         },
         "part3": {
-            "text": "Do you want to leave your entire project, such as Backend, Frontend, DevOps, cloud services, etc., to someone like me to do it for you?",
-            "bold_text": "I'm not an unicorn!"
+            "text": "Do you want someone to leave your entire project, such as Backend, Frontend, DevOps, cloud services, etc., to someone like me to do it for you?",
+            "bold_text": "We're not an unicorn!"
+        }
+    },
+    "portfolio": {
+        "part1": {
+            "image_alt": "Neshast application views",
+            "image_description": "Application view",
+            "title": "Neshast",
+            "description": "Neshast is a simple, efficient software with comprehensive, new and professional features that has performed strong and specialized activities in the field of holding webinars and online meetings. The mission of this team is to create this easy software and professional facilities at the lowest price for you, so that you can hold your online meetings and webinars with the best quality. The Neshast software has a complete set of unique features, including audio and video recording, sharing (page, music, video and pdf), taking notes during the meeting, normal and professional host before the meeting, final setting of the entry time. People to the meeting, public chat, setting the entry of people with the permission of the host or automatically and other options."
         }
     }
 }

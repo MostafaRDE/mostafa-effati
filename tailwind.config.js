@@ -21,6 +21,7 @@ module.exports = {
       },
       boxShadow: {
         'header': '4px 4px 100px 4px rgba(0, 0, 0, 0.25)',
+        'portfolio': '4px 4px 50px 4px rgba(0, 0, 0, 0.25)',
       },
       lineHeight: {
         '11': '2.75rem',

@@ -3,6 +3,7 @@ import { getDictionary } from '@/get-dictionary'
 import BottomNavigation from '@/components/layouts/bottom-navigation'
 import Header from '@/components/layouts/header'
 import WhatIDo from '@/components/layouts/what-i-do'
+import Portfolio from '@/components/layouts/portfolio'
 
 export default async function Home({ params: { lang } }: Props)
 {
@@ -13,9 +14,10 @@ export default async function Home({ params: { lang } }: Props)
 
             <Header lang={ lang } t={ t } />
 
-            <main className="my-20 px-16 xl:px-24 text-white text-center lg:text-left">
+            <main className="my-24 px-6 sm:px-16 xl:px-24 text-white text-center lg:text-left">
 
                 <WhatIDo lang={ lang } t={ t } />
+                <Portfolio lang={ lang } t={ t } />
 
             </main>
 

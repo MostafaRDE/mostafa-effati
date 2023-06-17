@@ -4,6 +4,7 @@ import BottomNavigation from '@/components/layouts/bottom-navigation'
 import Header from '@/components/layouts/header'
 import WhatIDo from '@/components/layouts/what-i-do'
 import Portfolio from '@/components/layouts/portfolio'
+import PartnersTalking from '@/components/layouts/partners-talking'
 
 export default async function Home({ params: { lang } }: Props)
 {
@@ -18,6 +19,7 @@ export default async function Home({ params: { lang } }: Props)
 
                 <WhatIDo lang={ lang } t={ t } />
                 <Portfolio lang={ lang } t={ t } />
+                <PartnersTalking lang={ lang } t={ t } />
 
             </main>
 

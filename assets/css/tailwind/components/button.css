@@ -1,18 +1,22 @@
 .btn {
-    @apply bg-white font-bold text-xl transition-opacity opacity-70;
-    padding: 13px 50px;
-    border-radius: 10px;
-    color: #ec8cb8;
-    border: solid 1px #ec8cb8;
+    @apply relative px-[50px] py-[13px] bg-gradient-primary-bold-to-252 font-bold text-xl transition-opacity opacity-70 rounded-[10px] text-[#ec8cb8];
+}
+.btn::before {
+    @apply absolute bottom-[1px] left-[1px] right-[1px] top-[1px] bg-white rounded-[10px];
+    content: ' ';
 }
 .btn:hover {
     @apply opacity-100;
 }
 
 .btn-shadow {
-    border: none;
     box-shadow: 4px 4px 40px 4px #6b6b6b40;
 }
+
 .btn-primary {
     @apply bg-gradient-primary-bold-to-252 text-white;
+}
+
+.btn-primary::before {
+    content: none;
 }

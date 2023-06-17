@@ -36,16 +36,16 @@ export default function button({ children, className, href, hasLinkType, onClick
     {
         case LinkTypes.HTML:
             return (
-                <a className={ classes } href={ href } target={ target } rel={ rel }>{ children }</a>
+                <a className={ classes } href={ href } target={ target } rel={ rel }><div className="z-[1] relative">{ children }</div></a>
             )
             
         case LinkTypes.Next:
             return (
-                <Link className={ classes } href={ href || '' }>{ children }</Link>
+                <Link className={ classes } href={ href || '' }><div className="z-[1] relative">{ children }</div></Link>
             )
     }
 
     return (
-        <button className={ classes } onClick={ onClick }>{ children }</button>
+        <button className={ classes } onClick={ onClick }><div className="z-[1] relative">{ children }</div></button>
     )
 }

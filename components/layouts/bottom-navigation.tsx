@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function bottomNavigation({ lang, t }: Params)
 {
     return (
-        <nav className="block sm:hidden fixed bottom-0 left-0 right-0 h-14 bg-white">
+        <nav className="block lg:hidden fixed bottom-0 left-0 right-0 h-14 bg-white">
             <ul className="flex justify-around items-center h-14 shadow-inner">
                 <li>
                     <a href="#home">

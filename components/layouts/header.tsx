@@ -15,7 +15,7 @@ export default function header({ lang, t }: Params)
 
             <HeaderTop lang={ lang } t={ t } />
 
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-24 sm:mt-28">
+            <div id="about" className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-24 sm:mt-28">
 
                 <div className="xl:col-span-2 order-2 xl:order-1 mt-24 xl:mt-0">
 

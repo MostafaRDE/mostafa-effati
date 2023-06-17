@@ -5,6 +5,7 @@ import Header from '@/components/layouts/header'
 import WhatIDo from '@/components/layouts/what-i-do'
 import Portfolio from '@/components/layouts/portfolio'
 import PartnersTalking from '@/components/layouts/partners-talking'
+import Footer from '@/components/layouts/footer'
 
 export default async function Home({ params: { lang } }: Props)
 {
@@ -22,6 +23,8 @@ export default async function Home({ params: { lang } }: Props)
                 <PartnersTalking lang={ lang } t={ t } />
 
             </main>
+
+            <Footer lang={ lang } t={ t }></Footer>
 
             <BottomNavigation lang={ lang } t={ t } />
 

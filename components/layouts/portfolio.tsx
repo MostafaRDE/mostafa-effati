@@ -19,7 +19,7 @@ const data: {
 export default function portfolio({ lang, t }: Params)
 {
     return (
-        <section className="mt-24">
+        <section id="portfolio" className="mt-24">
             <h2>{ t[ 'glossaries' ][ 'portfolio' ] }</h2>
 
             <div className="text-black">

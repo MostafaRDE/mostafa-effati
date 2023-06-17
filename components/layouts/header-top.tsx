@@ -11,7 +11,7 @@ export default function headerTop({ lang, t }: Params)
 {
     return (
         <div className="flex justify-between items-center">
-            <div className="relative flex justify-center w-full sm:block sm:w-auto">
+            <div className="relative flex justify-center w-full lg:block lg:w-auto">
 
                 {/* For sidebar mode */}
                 {/* <div className="absolute bottom-0 left-0 top-0 flex items-center sm:hidden">
@@ -25,7 +25,7 @@ export default function headerTop({ lang, t }: Params)
                 </Link>
             </div>
 
-            <div>
+            <div className="hidden lg:block">
                 <nav>
                     <ul className="flex gap-x-4">
                         {
@@ -38,7 +38,7 @@ export default function headerTop({ lang, t }: Params)
                                 })
 
                                 return (
-                                    <li key={ `header-top-menu-item-${ k }` } className="filter-none hidden sm:block sm:w-24 lg:w-28 xl:w-32 text-center">
+                                    <li key={ `header-top-menu-item-${ k }` } className="sm:w-24 lg:w-28 xl:w-32 text-center">
                                         <span className={ classNamesSpan }><a href={ v.href || '#' } className="font-bold ">{ t[ 'glossaries' ][ v.translateKey ] }</a></span>
                                     </li>
                                 )

@@ -1,4 +1,6 @@
-export default function footer()
+import { Params } from '@/modules/interfaces/props.interface'
+
+export default function footer({ lang, t }: Params)
 {
     return (
         <footer id="lets-talk" className="pb-16 sm:pb-0 sm:mb-20 lg:mb-10 bg-white sm:bg-transparent">
@@ -24,7 +26,7 @@ export default function footer()
                     </a>
                 </div>
             </div>
-            
+
         </footer>
     )
 }

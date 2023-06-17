@@ -1,7 +1,8 @@
 import { Props } from '@/modules/interfaces/props.interface'
 import { getDictionary } from '@/get-dictionary'
-import Header from '@/components/layouts/header'
 import BottomNavigation from '@/components/layouts/bottom-navigation'
+import Header from '@/components/layouts/header'
+import WhatIDo from '@/components/layouts/what-i-do'
 
 export default async function Home({ params: { lang } }: Props)
 {
@@ -12,7 +13,9 @@ export default async function Home({ params: { lang } }: Props)
 
             <Header lang={ lang } t={ t } />
 
-            <main className="max-w-7xl mx-auto my-20">
+            <main className="my-20 px-16">
+
+                <WhatIDo lang={ lang } t={ t } />
 
             </main>
 

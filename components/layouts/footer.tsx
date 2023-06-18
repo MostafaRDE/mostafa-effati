@@ -27,10 +27,9 @@ export default function footer({ lang, t }: Params)
 
             <div className="mt-14 xl:grid xl:grid-cols-2 relative sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 lg:px-[5.5rem] py-[4.5rem] sm:rounded-3xl bg-white w-full sm:shadow-header bg-[url('../../images/shapes/line-1.svg')] bg-no-repeat bg-[80%_0]">
 
-
-                <section className="">
+                <section>
                     <h3 className="text-gradient-primary inline-block font-bold text-4xl sm:text-5xl">{ t[ 'glossaries' ][ 'lets_talk' ] }</h3>
-                    <div>
+                    <div className="mt-8">
                         <ul className="grid sm:grid-cols-2 gap-5 xl:max-w-lg 2xl:max-w-2xl">
                             {
                                 Object.entries(footerLinks).map(([ k, v ]) =>

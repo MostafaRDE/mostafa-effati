@@ -16,10 +16,10 @@
       },
       "header": {
         "caption": {
-          "title": "Full Stack Developer and develop your product in a scalable and efficient way",
+          "title": "Develop your product in a scalable and efficient way",
           "top": {
-            "pat1": "Hello,",
-            "part2r": "I'm Mostafa Effati full stack developer"
+            "part1": "Hello,",
+            "part2": "I'm Mostafa Effati full stack developer"
           }
         }
       },

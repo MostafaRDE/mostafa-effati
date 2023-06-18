@@ -20,7 +20,7 @@ export default function bottomNavigation({ lang, t }: Params)
                         return (
                             <li key={ `bottom-navigation-item-${ k }` }>
                                 <a href={ v.href || '#' }>
-                                    <FontAwesomeIcon icon={ v.icon! } width={ 24 } height={ 24 } />
+                                    <FontAwesomeIcon icon={ v.icon! } width={ 24 } height={ 24 } color="#000" />
                                 </a>
                             </li>
                         )

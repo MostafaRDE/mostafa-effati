@@ -11,7 +11,7 @@ import HeaderTop from './header-top'
 export default function header({ lang, t }: Params)
 {
     return (
-        <header className="relative sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header xl:bg-[url('../../images/shapes/cross-lines-1.svg')] xl:bg-no-repeat xl:bg-right-bottom">
+        <header className="relative text-black sm:mt-8 lg:mt-16 px-8 sm:px-8 md:px-14 py-11 sm:rounded-3xl bg-white w-full shadow-header xl:bg-[url('../../images/shapes/cross-lines-1.svg')] xl:bg-no-repeat xl:bg-right-bottom">
 
             <HeaderTop lang={ lang } t={ t } />
 

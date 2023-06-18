@@ -24,7 +24,7 @@ export default function whatIDo({ lang, t }: Params)
                     data.map((item, index) =>
                     {
                         return (
-                            <div className="mb-16 last:mb-0 lg:mb-0">
+                            <div key={ `what-i-do-item-${ index }` } className="mb-16 last:mb-0 lg:mb-0">
                                 <FontAwesomeIcon icon={ item.icon } width={ 100 } height={ 100 } color="white" className="mx-auto lg:ml-0" />
                                 <p className="mt-10">{ item.text || t[ 'pages' ][ 'index' ][ 'what_i_do' ][ 'part' + (index + 1) ][ 'text' ] }</p>
                                 <mark className="block mt-4 bg-transparent font-bold text-white">

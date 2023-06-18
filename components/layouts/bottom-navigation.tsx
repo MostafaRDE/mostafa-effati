@@ -18,7 +18,7 @@ export default function bottomNavigation({ lang, t }: Params)
                     Object.entries(menuHeaderItems).map(([ k, v ]) =>
                     {
                         return (
-                            <li>
+                            <li key={ `bottom-navigation-item-${ k }` }>
                                 <a href={ v.href || '#' }>
                                     <FontAwesomeIcon icon={ v.icon! } width={ 24 } height={ 24 } />
                                 </a>

@@ -36,7 +36,7 @@ export default function footer({ lang, t }: Params)
                             Object.entries(footerLinks).map(([ k, v ]) =>
                             {
                                 return (
-                                    <li className="max-w-xs">
+                                    <li key={ `footer-links-item-${ k }` } className="max-w-xs">
                                         <a href={ v.href } target="_blank" rel="nofollow" className="text-xl flex gap-4 items-center hover:underline">
                                             <FontAwesomeIcon icon={ v.icon! } color={ v.iconColor } width={ 24 } height={ 24 } />
                                             <span>{ v.title }</span>
@@ -65,7 +65,7 @@ export default function footer({ lang, t }: Params)
                         <ul className="grid sm:grid-cols-2 xl:max-w-2xl 2xl:max-w-4xl">
                             {
                                 linkedInQRCodes.map(item => (
-                                    <li className="flex mt-8 sm:mt-0">
+                                    <li key={ `footer-linkedin-qr-code-item-${ item.linkedinId }` } className="flex mt-8 sm:mt-0">
                                         <div className="mr-8">
                                             <Image
                                                 src={ item.imageSrc }

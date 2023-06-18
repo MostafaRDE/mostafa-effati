@@ -56,7 +56,7 @@ export default function portfolio({ lang, t }: Params)
                     data.map((item, index) =>
                     {
                         return (
-                            <section className="bg-white rounded-3xl shadow-portfolio p-6 sm:p-10 md:p-[4.5rem] columns-1 lg:grid lg:grid-cols-3 gap-x-24 mb-12 sm:mb-24">
+                            <section key={ `portfolio-item-${ index }` } className="bg-white rounded-3xl shadow-portfolio p-6 sm:p-10 md:p-[4.5rem] columns-1 lg:grid lg:grid-cols-3 gap-x-24 mb-12 sm:mb-24">
 
                                 <div className="lg:order-2 flex flex-col justify-center items-center">
                                     <div className="rounded-xl overflow-hidden p-[1px] bg-gradient-primary-to-252">

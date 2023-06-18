@@ -61,7 +61,7 @@ export default function partnersTalking({ lang, t }: Params)
                     data.map((item, index) =>
                     {
                         return (
-                            <div className="border-dashed border-2 border-white rounded-[10px] p-8 flex flex-col md:first:col-span-2 xl:last:col-span-2">
+                            <div key={ `partners-talking-item-${ index }` } className="border-dashed border-2 border-white rounded-[10px] p-8 flex flex-col md:first:col-span-2 xl:last:col-span-2">
                                 <div className="grow flex items-center">
                                     <p>{ item.text }</p>
                                 </div>

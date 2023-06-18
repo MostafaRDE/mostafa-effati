@@ -17,11 +17,11 @@ export interface MenuItemInterface
 }
 
 export const menuHeaderItems: Menu = {
-    about: {
-        icon: faInfo,
-        translateKey: 'about',
-        href: '#about',
-    },
+    // about: {
+    //     icon: faInfo,
+    //     translateKey: 'about',
+    //     href: '#about',
+    // },
     whatIDo: {
         icon: faThumbsUp,
         translateKey: 'what_i_do',

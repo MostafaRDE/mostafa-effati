@@ -15,12 +15,15 @@ export default function header({ lang, t }: Params)
 
             <HeaderTop lang={ lang } t={ t } />
 
-            <div id="about" className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-24 sm:mt-28">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-20 px-8 sm:px-12 md:px-20 mb-16 mt-24 sm:mt-28">
 
                 <div className="xl:col-span-2 order-2 xl:order-1 mt-24 xl:mt-0">
 
                     <div>
-                        <span className="text-xl sm:text-2xl font-medium">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'top' ] }</span>
+                        <span className="text-xl sm:text-2xl font-medium">
+                            { t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'top' ][ 'part1' ] }<br />
+                            { t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'top' ][ 'part2' ] }
+                        </span>
                         <h1 className="text-4xl sm:text-5xl font-bold leading-12 sm:leading-15 mt-5">{ t[ 'pages' ][ 'index' ][ 'header' ][ 'caption' ][ 'title' ] }</h1>
                     </div>
 

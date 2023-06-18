@@ -17,7 +17,10 @@
       "header": {
         "caption": {
           "title": "Full Stack Developer and develop your product in a scalable and efficient way",
-          "top": "Hello, I'm Mostafa Effati"
+          "top": {
+            "pat1": "Hello,",
+            "part2r": "I'm Mostafa Effati full stack developer"
+          }
         }
       },
       "what_i_do": {

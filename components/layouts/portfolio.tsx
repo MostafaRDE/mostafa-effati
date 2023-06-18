@@ -11,8 +11,36 @@ const data: {
     href?: string,
 }[] = [
     {
-        imageSrc: require('@/assets/images/portfolios/neshast.png'),
+        imageSrc: require('@/assets/images/portfolios/nginx-dockerized.jpg'),
+        href: 'https://github.com/cmorgh-org/web-server-nginx-docker',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/neshast.jpg'),
         href: 'https://www.neshastapp.ir',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/e-server.jpg'),
+        href: 'https://github.com/MostafaRDE/eserver',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/eon.jpg'),
+        href: 'https://github.com/MostafaRDE/eon',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/karzar.jpg'),
+        href: 'https://github.com/MostafaRDE/karzar-v1',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/restyle.jpg'),
+        href: 'https://github.com/MostafaRDE/restyle',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/fullclone.jpg'),
+        href: 'https://github.com/MostafaRDE/fullclone',
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/vue-ssr.jpg'),
+        href: 'https://github.com/MostafaRDE/vue-ssr',
     },
 ]
 

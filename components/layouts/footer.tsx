@@ -50,7 +50,7 @@ export default function footer({ lang, t }: Params)
                             <Button
                                 type={ ButtonTypes.Primary }
                                 hasLinkType={ LinkTypes.HTML }
-                                href="https://drive.google.com/file/d/1IgqfJC61FYNdLuf77j2HiVJ60a_T6lPu/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1kmkW47Np74FRYJ48q7kcKCpNTnkd3uvz/view?usp=sharing"
                                 target="_blank"
                                 className="rounded-md inline-block 2xl:w-96">
                                 <span className="flex gap-4 justify-center">

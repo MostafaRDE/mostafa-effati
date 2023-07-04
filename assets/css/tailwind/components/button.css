@@ -1,0 +1,22 @@
+.btn {
+    @apply relative px-[50px] py-[13px] bg-gradient-primary-bold-to-252 font-bold text-xl transition-opacity opacity-50 rounded-[10px] text-[#ec8cb8];
+}
+.btn::before {
+    @apply absolute bottom-[1px] left-[1px] right-[1px] top-[1px] bg-white rounded-[10px];
+    content: ' ';
+}
+.btn:hover {
+    @apply opacity-100;
+}
+
+.btn-shadow {
+    box-shadow: 4px 4px 40px 4px #6b6b6b40;
+}
+
+.btn-primary {
+    @apply bg-gradient-primary-bold-to-252 text-white;
+}
+
+.btn-primary::before {
+    content: none;
+}

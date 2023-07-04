@@ -1,0 +1,19 @@
+@tailwind base;
+
+@layer base {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply text-base;
+        color: rgb(var(--foreground-rgb));
+        background: linear-gradient(to left, #f1b8d2bd, #95bbe9c9);
+    }
+
+    h2 {
+        @apply mb-14 font-bold text-4xl;
+    }
+    
+}

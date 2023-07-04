@@ -1,0 +1,92 @@
+{
+  "glossaries": {
+    "about": "About",
+    "download_my_resume": "Download my resume",
+    "lets_talk": "Let's Talk",
+    "look": "Look",
+    "partners_talking": "Partners talking",
+    "portfolio": "Portfolio",
+    "what_i_do": "What i Do",
+    "what_i_do_2": "What I do"
+  },
+  "pages": {
+    "index": {
+      "head": {
+        "title": "Mostafa Effati | Lead & Full stack developer"
+      },
+      "header": {
+        "caption": {
+          "title": "Develop your product in a scalable and efficient way",
+          "top": {
+            "part1": "Hello,",
+            "part2": "I'm Mostafa Effati full stack developer"
+          }
+        }
+      },
+      "what_i_do": {
+        "part1": {
+          "text": "Do you want to develop and deploy your software with quality and in the basic methods of the day?",
+          "bold_text": "I can do it."
+        },
+        "part2": {
+          "text": "Do you want to produce or modify your software in an engineered and professional way?",
+          "bold_text": "I can help you."
+        },
+        "part3": {
+          "text": "Do you want to leave your entire project, such as Backend, Frontend, DevOps, cloud services, etc ..., to someone like me to do it for you?",
+          "bold_text": "We're not an unicorn!"
+        }
+      },
+      "portfolio": {
+        "part1": {
+          "image_alt": "NginX Web Server Dockerized (Full Control) - Banner",
+          "image_description": "Banner",
+          "title": "NginX Web Server Dockerized (Full Control)",
+          "description": "A small project for complete and professional management of NginX with the command line without having any graphical environment and also with the ability to generate SSL and regenerate it monthly."
+        },
+        "part2": {
+          "image_alt": "Neshast (Online Conference Application) - Application views",
+          "image_description": "Application view",
+          "title": "Neshast (Online Conference Application)",
+          "description": "Neshast is a simple, efficient software with comprehensive, new and professional features that has performed strong and specialized activities in the field of holding webinars and online meetings. The mission of this team is to create this easy software and professional facilities at the lowest price for you, so that you can hold your online meetings and webinars with the best quality. The Neshast software has a complete set of unique features, including audio and video recording, sharing (page, music, video and pdf), taking notes during the meeting, normal and professional host before the meeting, final setting of the entry time. People to the meeting, public chat, setting the entry of people with the permission of the host or automatically and other options."
+        },
+        "part3": {
+          "image_alt": "E-Server Framework (Such as laravel and adonisjs for nodejs on express.js) - Banner",
+          "image_description": "Banner",
+          "title": "E-Server Framework",
+          "description": "A framework similar to Laravel with the same routing system, provider system and almost the same ORM system similar to Eloquent Laravel with Node.js."
+        },
+        "part4": {
+          "image_alt": "Eloquent ORM Node (An ORM such as laravel Eloquent for nodejs on express.js) - Banner",
+          "image_description": "Banner",
+          "title": "Eloquent ORM Node",
+          "description": "An ORM, like project (Eloquent) in the Laravel framework with Nodejs. This project still needs to be completed and has a series of minor problems, and it was not upgraded the modelling department due to a lack of support."
+        },
+        "part5": {
+          "image_alt": "Karzar - Online game tournaments - Website view",
+          "image_description": "Website view",
+          "title": "Karzar - Online game tournaments",
+          "description": "A website for running multiplayer online mobile and console gaming tournaments with prizes."
+        },
+        "part6": {
+          "image_alt": "Restyle (A CSS framework like tailwind and bootstrap 5) - Banner",
+          "image_description": "Banner",
+          "title": "Restyle - CSS Framework",
+          "description": "It is a framework for css that is very similar to Bootstrap 5. The biggest problem that this framework solved was the formatting based on several different themes. At that time, Bootstrap 5 was not released, so that with the help of dedicated scss, fundamental changes can be made in the css format of the project, and I found it difficult to use Restyle. I made it possible at that time."
+        },
+        "part7": {
+          "image_alt": "Fullclone (A library for full cloning from object and sub prototypes in javascript) - Banner",
+          "image_description": "Banner",
+          "title": "Fullclone - A pure javascript library",
+          "description": "This is a META and pure javascript library. A library for full cloning from object and sub prototypes in javascript."
+        },
+        "part8": {
+          "image_alt": "Vue-SSR (A pure vue2 project for SSR mode) - Banner",
+          "image_description": "Banner",
+          "title": "Vue-SSR - A pure vue2 project for SSR mode",
+          "description": "I created a Nuxt-like project for \"Server Side Renderer\" with Vue2 for full flow control."
+        }
+      }
+    }
+  }
+}

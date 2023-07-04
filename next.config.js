@@ -3,10 +3,6 @@ const nextConfig = {
     experimental: {
         appDir: true,
     },
-    images: {
-        dangerouslyAllowSVG: true,
-        formats: ['image/webp'],
-    },
     trailingSlash: true,
 }
 

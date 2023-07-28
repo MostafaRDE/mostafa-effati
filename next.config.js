@@ -5,7 +5,7 @@ const nextConfig = {
     },
     images: {
         dangerouslyAllowSVG: true,
-        formats: ['image/webp'],
+        formats: [ 'image/webp' ],
     },
     trailingSlash: true,
 }

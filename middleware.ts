@@ -37,7 +37,7 @@ export function middleware(request: NextRequest)
         const locale = getLocale(request)
 
         // e.g. incoming request is /login/
-        // The new URL is now /en-us/login/
+        // The new URL is now /en-US/login/
         return NextResponse.redirect(new URL(`/${ locale }/${ pathname }`, request.url))
     }
 }

@@ -19,6 +19,8 @@ export const objectCreator = (subPath?: string) =>
     return dictionary
 }
 
+console.log('PRODUCTION MODE =>', process.env.production)
+if (process.env.NODE_ENV !== 'production')
 Object.entries(objectCreator()).forEach(([ lang, translates ]) => fs.writeFileSync(
     path.join(process.cwd(), '_dictionary', `${ lang }.json`),
     JSON.stringify(translates, null, 2),

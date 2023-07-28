@@ -8,5 +8,4 @@ const dictionaries = {
     'en-us': () => import('./_dictionary/en-us.json').then((module) => module.default),
 }
 
-console.log(dictionaries)
 export const getDictionary = async (locale: Locale) => dictionaries[locale || i18n.defaultLocale]()

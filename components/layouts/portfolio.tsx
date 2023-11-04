@@ -11,6 +11,19 @@ const data: {
     href?: string,
 }[] = [
     {
+        imageSrc: require('@/assets/images/portfolios/transportation-app.jpg'),
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/encrypt-decrypt-finder.jpg'),
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/repository-adapter.jpg'),
+    },
+    {
+        imageSrc: require('@/assets/images/portfolios/pagination-sort-filter.jpg'),
+        href: 'https://www.npmjs.com/package/nestjs-soft-pagination-filter-sort',
+    },
+    {
         imageSrc: require('@/assets/images/portfolios/nginx-dockerized.jpg'),
         href: 'https://github.com/cmorgh-org/web-server-nginx-docker',
     },

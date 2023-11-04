@@ -42,25 +42,25 @@
           "image_alt": "Transportation App - Banner",
           "image_description": "Banner",
           "title": "Transportation App",
-          "description": "A small project for complete and professional management of NginX with the command line without having any graphical environment and also with the ability to generate SSL and regenerate it monthly."
+          "description": "An Application for customer like uber with customized features. (Private solution and documentation)"
         },
         "part2": {
           "image_alt": "Encrypt Decrypt Finder - Banner",
           "image_description": "Banner",
           "title": "Encrypt Decrypt Finder - npm package",
-          "description": "A small project for complete and professional management of NginX with the command line without having any graphical environment and also with the ability to generate SSL and regenerate it monthly."
+          "description": "Data of database is very important and we must safe it; so we created a package for encrypts recorded datas, decrypts it in usage and found datas in these."
         },
         "part3": {
           "image_alt": "Repository Adapter - Banner",
           "image_description": "Banner",
           "title": "Repository Adapter - npm package",
-          "description": "A small project for complete and professional management of NginX with the command line without having any graphical environment and also with the ability to generate SSL and regenerate it monthly."
+          "description": "A small package for easy switch between databases without change anything!"
         },
         "part4": {
           "image_alt": "Nestjs / Soft Pagination Filter Sort - Banner",
           "image_description": "Banner",
           "title": "Nestjs / Soft Pagination Filter Sort - npm package",
-          "description": "A small project for complete and professional management of NginX with the command line without having any graphical environment and also with the ability to generate SSL and regenerate it monthly."
+          "description": "Created for solving advanced paginating, advanced filtering and advanced sorting with contributing Front-end developers in the Nestjs Back-end framework."
         },
         "part5": {
           "image_alt": "NginX Web Server Dockerized (Full Control) - Banner",

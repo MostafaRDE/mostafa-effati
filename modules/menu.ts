@@ -64,7 +64,7 @@ export const socialMediaItems: Menu = {
         icon: faTelegram,
         iconColor: '#0088cc',
         translateKey: 'telegram',
-        href: 'https://t.me/mostafaeffati',
+        href: 'https://t.me/mostafa_effati',
     },
 }
 
@@ -73,8 +73,8 @@ export const footerLinks: Menu = {
         icon: faPaperPlane,
         iconColor: '#d9b9d8',
         translateKey: '',
-        title: 'contact@mostafaeffati.ir',
-        href: 'mailto:contact@mostafaeffati.ir',
+        title: 'contact@mostafaeffati.com',
+        href: 'mailto:contact@mostafaeffati.com',
     },
     telegram: {
         icon: faTelegram,

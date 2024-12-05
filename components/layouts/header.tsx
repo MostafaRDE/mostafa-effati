@@ -37,7 +37,7 @@ export default function header({ lang, t }: Params)
                                         href={ v.href || '#' }
                                         target='_blank'
                                         rel="nofollow"
-                                        className="opacity-50 hover:opacity-100 transition-opacity"
+                                        className="opacity-50 hover:opacity-100 transition-opacity flex items-center"
                                     >
                                         <FontAwesomeIcon icon={ v.icon! } color={ v.iconColor } width={ 24 } />
                                     </Link>

@@ -1,4 +1,4 @@
-import { IconDefinition, faGithub, faInstagram, faLinkedinIn, faTelegram } from '@fortawesome/free-brands-svg-icons'
+import { IconDefinition, faGithub, faInstagram, faLinkedinIn, faTelegram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faInfo, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope, faFaceLaughBeam, faSquareCheck, faThumbsUp } from '@fortawesome/free-regular-svg-icons'
 
@@ -48,6 +48,12 @@ export const menuHeaderItems: Menu = {
 }
 
 export const socialMediaItems: Menu = {
+    youtube: {
+        icon: faYoutube,
+        iconColor: '#ff0033',
+        translateKey: 'youtube',
+        href: 'https://www.youtube.com/@mostafaeffati',
+    },
     linkedin: {
         icon: faLinkedinIn,
         iconColor: '#0075b5',

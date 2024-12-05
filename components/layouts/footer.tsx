@@ -11,12 +11,14 @@ const linkedInQRCodes = [
         imageAlt: 'QR-Code Mostafa-Effati linkedin account url',
         linkedinId: 'mostafaeffati',
         href: 'https://www.linkedin.com/in/mostafaeffati/',
+        myDonationLink: '#',
     },
     {
         imageSrc: require('@/assets/images/qr-codes/qr-linkedin-shirley-bacilio.png'),
         imageAlt: 'QR-Code Shirley-Bacilio linkedin account url',
         linkedinId: 'shirleybacilio',
         href: process.env.SOCIAL_LINKS_SHIRLEY_BACILIO_LINKEDIN,
+        myDonationLink: 'https://www.paypal.me/sb0410',
     },
 ]
 
@@ -75,6 +77,8 @@ export default function footer({ lang, t }: Params)
                                             <div className="flex flex-col justify-center items-start">
                                                 <span>Connect in Linkedin</span>
                                                 <a href={ item.href } target="_blank" rel="nofollow" className="underline">@{ item.linkedinId }</a>
+                                                <br />
+                                                <a href={ item.myDonationLink } target="_blank" rel="nofollow" className="text-sm text-gradient-primary-bold hover:text-gradient-primary underline">Donate me with a coffee</a>
                                             </div>
                                         </li>
                                     ))

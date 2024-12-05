@@ -14,14 +14,20 @@ export interface MenuItemInterface
     href?: string
     classNames?: string
     classNamesHover?: string
+    rel?: string
+    target?: string
+    onMobile?: boolean
 }
 
 export const menuHeaderItems: Menu = {
-    // about: {
-    //     icon: faInfo,
-    //     translateKey: 'about',
-    //     href: '#about',
-    // },
+    academy: {
+        icon: faThumbsUp,
+        translateKey: 'academy',
+        href: 'https://mostafaeffati.academy',
+        target: '_blank',
+        rel: 'nofollow',
+        onMobile: false,
+    },
     whatIDo: {
         icon: faThumbsUp,
         translateKey: 'what_i_do',

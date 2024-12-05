@@ -39,7 +39,8 @@ export default function headerTop({ lang, t }: Params)
 
                                 return (
                                     <li key={ `header-top-menu-item-${ k }` } className="sm:w-24 lg:w-28 xl:w-32 text-center">
-                                        <span className={ classNamesSpan }><a href={ v.href || '#' } className="font-bold ">{ t[ 'glossaries' ][ v.translateKey ] }</a></span>
+                                        <span className={ classNamesSpan }><a href={ v.href || '#' } className="font-bold " rel={ v.rel } target={ v.target }>{ t[ 'glossaries' ][ v.translateKey ] }</a></span>
+                                        { v.target === '_blank' ? (<>&nbsp;&#8599;</>) : ''}
                                     </li>
                                 )
                             })

@@ -15,7 +15,7 @@ export default function bottomNavigation({ lang, t }: Params)
                     </a>
                 </li>
                 {
-                    Object.entries(menuHeaderItems).map(([ k, v ]) =>
+                    Object.entries(menuHeaderItems).filter(([ k, v ]) => v.onMobile === true || v.onMobile === undefined).map(([ k, v ]) =>
                     {
                         return (
                             <li key={ `bottom-navigation-item-${ k }` }>

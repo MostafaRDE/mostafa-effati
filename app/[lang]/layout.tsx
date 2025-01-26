@@ -31,7 +31,7 @@ export default function RootLayout({
             <body className={ inter.className }>
                 <div className="h-16 bg-gradient-to-r from-[#7148b5] via-[#8769e9] to-[#715dd3]">
                     <a
-                        href="https://mostafaeffati.academy"
+                        href="https://academy.mostafaeffati.com"
                         className="flex justify-center items-center w-100 h-100"
                         target="_blank"
                         rel="nofollow"

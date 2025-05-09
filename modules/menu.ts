@@ -23,7 +23,7 @@ export const menuHeaderItems: Menu = {
     academy: {
         icon: faThumbsUp,
         translateKey: 'academy',
-        href: 'https://mostafaeffati.academy',
+        href: 'https://academy.mostafaeffati.com',
         target: '_blank',
         rel: 'nofollow',
         onMobile: false,

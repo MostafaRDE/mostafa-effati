@@ -1,5 +1,6 @@
 import '@/assets/css/globals.css'
 
+import { Analytics } from '@vercel/analytics/next'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { getDictionary } from '@/get-dictionary'
@@ -7,7 +8,7 @@ import { Locale } from '@/i18n-config'
 
 const inter = Inter({ subsets: [ 'latin' ] })
 
-export async function generateMetadata({ params : { lang } }: { params: { lang: Locale } }): Promise<Metadata>
+export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata>
 {
     const dictionary = await getDictionary(lang)
 
@@ -26,7 +27,10 @@ export default function RootLayout({
 {
     return (
         <html lang={ lang }>
-            <body className={ inter.className }>{ children }</body>
+            <body className={ inter.className }>
+                { children }
+                <Analytics />
+            </body>
         </html>
     )
 }
